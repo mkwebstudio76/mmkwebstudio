@@ -512,7 +512,60 @@
     font-size: 24px;
   }
 }
+/* PREMIUM CARD EFFECTS */
 
+.pricing-grid .price-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 12px 30px rgba(17, 21, 34, 0.10);
+}
+
+.pricing-grid .price-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(17, 21, 34, 0.18);
+}
+
+/* ICON STYLE */
+
+.price-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    font-size: 28px;
+    margin-bottom: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* STARTER */
+
+.starter-icon {
+    background: #e8f1ff;
+}
+
+/* BUSINESS */
+
+.business-icon {
+    background: linear-gradient(135deg, #6d28d9, #a855f7);
+}
+
+/* PREMIUM */
+
+.premium-icon {
+    background: #fff0cf;
+}
+
+/* FEATURED BUSINESS CARD */
+
+.pricing-grid .price-card.featured {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 45px rgba(109, 40, 217, 0.20);
+}
+
+.pricing-grid .price-card.featured:hover {
+    transform: translateY(-12px);
+}
 
 
 
