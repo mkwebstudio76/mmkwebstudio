@@ -410,7 +410,48 @@
   background: #fff0df !important;
   color: #f97316 !important;
 }
+/* ===== PRICING CARD COLORS & SHADOWS ===== */
 
+.pricing-grid .price-card:nth-child(1) {
+  background: linear-gradient(145deg, #ffffff, #e8f1ff) !important;
+  border: 2px solid #6da8ff !important;
+  box-shadow: 0 15px 40px rgba(50, 120, 255, 0.20) !important;
+}
+
+.pricing-grid .price-card:nth-child(2) {
+  background: linear-gradient(145deg, #ffffff, #f0e6ff) !important;
+  border: 2px solid #8b45ff !important;
+  box-shadow: 0 15px 45px rgba(130, 50, 255, 0.25) !important;
+  transform: translateY(-8px);
+}
+
+.pricing-grid .price-card:nth-child(3) {
+  background: linear-gradient(145deg, #ffffff, #fff0df) !important;
+  border: 2px solid #ffad45 !important;
+  box-shadow: 0 15px 40px rgba(255, 145, 30, 0.22) !important;
+}
+
+/* Card hover effect */
+.pricing-grid .price-card {
+  transition: all 0.3s ease !important;
+}
+
+.pricing-grid .price-card:hover {
+  transform: translateY(-10px) !important;
+}
+
+/* Prices */
+.pricing-grid .price-card:nth-child(1) h3 {
+  color: #1769ff !important;
+}
+
+.pricing-grid .price-card:nth-child(2) h3 {
+  color: #722cff !important;
+}
+
+.pricing-grid .price-card:nth-child(3) h3 {
+  color: #f97316 !important;
+}
 
 
 
