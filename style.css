@@ -475,7 +475,43 @@
   box-shadow: 0 8px 20px rgba(109, 40, 217, 0.30);
   z-index: 5;
 }
+/* ===== PRICING ICONS ===== */
 
+.price-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Starter */
+.starter-icon {
+  background: linear-gradient(135deg, #dbeafe, #93c5fd);
+}
+
+/* Business */
+.business-icon {
+  background: linear-gradient(135deg, #ede9fe, #a855f7);
+}
+
+/* Premium */
+.premium-icon {
+  background: linear-gradient(135deg, #fef3c7, #fbbf24);
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .price-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 24px;
+  }
+}
 
 
 
