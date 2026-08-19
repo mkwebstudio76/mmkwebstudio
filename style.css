@@ -452,7 +452,29 @@
 .pricing-grid .price-card:nth-child(3) h3 {
   color: #f97316 !important;
 }
+/* ===== MOST POPULAR BADGE ===== */
 
+.pricing-grid .price-card:nth-child(2) {
+  position: relative;
+}
+
+.pricing-grid .price-card:nth-child(2)::before {
+  content: "★ MOST POPULAR";
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #6d28d9, #9333ea);
+  color: #fff;
+  padding: 9px 25px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  box-shadow: 0 8px 20px rgba(109, 40, 217, 0.30);
+  z-index: 5;
+}
 
 
 
