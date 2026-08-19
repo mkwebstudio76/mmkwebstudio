@@ -566,7 +566,72 @@
 .pricing-grid .price-card.featured:hover {
     transform: translateY(-12px);
 }
+/* PRICING BUTTONS */
+.price-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
 
+.price-actions a {
+  padding: 10px 16px !important;
+  border-radius: 25px !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  display: inline-block;
+}
+
+.contact-btn {
+  background: #eef4ff !important;
+  color: #1769ff !important;
+  border: 1px solid #1769ff !important;
+}
+
+.whatsapp-btn {
+  background: #25D366 !important;
+  color: white !important;
+  border: 1px solid #25D366 !important;
+}
+
+.contact-btn:hover,
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* KEEP THREE CARDS TOGETHER */
+.pricing-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 28px !important;
+  align-items: stretch !important;
+}
+
+.price-card {
+  position: relative !important;
+  height: auto !important;
+  min-height: 500px !important;
+}
+
+.popular-badge {
+  position: absolute !important;
+  top: -18px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background: #6324e8 !important;
+  color: white !important;
+  padding: 9px 24px !important;
+  border-radius: 25px !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
+  z-index: 5 !important;
+}
+
+@media (max-width: 800px) {
+  .pricing-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
 
 
 
